@@ -172,7 +172,7 @@ export class MemStorage implements IStorage {
         name: "Premium Shirts",
         description: "Handcrafted dress shirts using the finest Italian fabrics",
         imageUrl: "/attached_assets/bottega_ph.png",
-        priceRange: "From €295",
+        priceRange: "From $295",
         category: "shirts",
         isActive: true
       },
@@ -180,7 +180,7 @@ export class MemStorage implements IStorage {
         name: "Bespoke Trousers",
         description: "Perfectly tailored trousers crafted from premium wool",
         imageUrl: "/attached_assets/bottega_ph.png",
-        priceRange: "From €350",
+        priceRange: "From $350",
         category: "trousers",
         isActive: true
       },
@@ -188,7 +188,7 @@ export class MemStorage implements IStorage {
         name: "Premium Accessories",
         description: "Exquisite accessories to complete your sartorial wardrobe",
         imageUrl: "/attached_assets/bottega_ph.png",
-        priceRange: "From €125",
+        priceRange: "From $125",
         category: "accessories",
         isActive: true
       }
