@@ -9,6 +9,8 @@ import type { Product, Fabric } from "@shared/schema";
 import type { ConfiguratorState } from "@/lib/types";
 import { apiRequest } from "@/lib/queryClient";
 
+import _1_1 from "@assets/1-1.jpg";
+
 export function ProductConfigurator() {
   const { toast } = useToast();
   const queryClient = useQueryClient();
@@ -128,7 +130,7 @@ export function ProductConfigurator() {
           {/* Product Preview */}
           <div className="relative">
             <img
-              src={shirtProduct.images[0]}
+              src={_1_1}
               alt="Bespoke shirt preview"
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
