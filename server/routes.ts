@@ -1,7 +1,11 @@
-import type { Express } from "express";
+import type { Express, Request } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertCartItemSchema, insertConsultationRequestSchema } from "@shared/schema";
+
+interface SessionRequest extends Request {
+  sessionID?: string;
+}
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Products
@@ -77,7 +81,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Cart
   app.get("/api/cart", async (req, res) => {
     try {
-      const sessionId = req.sessionID || "anonymous";
+      const sessionId = (req as SessionRequest).sessionID || "anonymous";
       const cartItems = await storage.getCartItems(sessionId);
       res.json(cartItems);
     } catch (error) {
@@ -87,7 +91,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post("/api/cart", async (req, res) => {
     try {
-      const sessionId = req.sessionID || "anonymous";
+      const sessionId = (req as SessionRequest).sessionID || "anonymous";
       const cartItemData = { ...req.body, sessionId };
       
       const validatedData = insertCartItemSchema.parse(cartItemData);
@@ -137,7 +141,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.delete("/api/cart", async (req, res) => {
     try {
-      const sessionId = req.sessionID || "anonymous";
+      const sessionId = (req as SessionRequest).sessionID || "anonymous";
       await storage.clearCart(sessionId);
       res.json({ message: "Cart cleared" });
     } catch (error) {
