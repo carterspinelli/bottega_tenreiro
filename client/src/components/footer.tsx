@@ -23,7 +23,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-charcoal text-white py-16">
+    <footer className="text-white py-16 bg-[#000000]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
