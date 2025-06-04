@@ -1,7 +1,5 @@
 import { Instagram, Facebook, Linkedin } from "lucide-react";
-import bottegaLogo from "@assets/Bottega2.png";
-
-import Bottega2 from "@assets/Bottega2.png";
+import bottegaFooterLogo from "@assets/Bottega2_ft.png";
 
 export function Footer() {
   const collections = [
@@ -30,9 +28,9 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <img 
-              src={Bottega2} 
+              src={bottegaFooterLogo} 
               alt="Bottega Tenreiro" 
-              className="h-8 w-auto mb-6 brightness-0 invert"
+              className="h-12 w-auto mb-6"
             />
             <p className="text-gray-300 leading-relaxed mb-6">
               Exclusive made-to-measure tailoring combining traditional craftsmanship 
