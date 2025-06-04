@@ -4,16 +4,12 @@ import bottegaFooterLogo from "@assets/Bottega2_ft.png";
 export function Footer() {
   const collections = [
     "Made to Measure Shirts",
-    "Bespoke Suits",
-    "Premium Trousers",
+    "Premium Suits",
+    "Bespoke Trousers",
     "Accessories",
   ];
 
-  const services = [
-    "Size Guide",
-    "Care Instructions",
-    "Returns & Exchanges",
-  ];
+  const services = ["Size Guide", "Care Instructions", "Returns & Exchanges"];
 
   const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
 
