@@ -73,9 +73,7 @@ export function ContactSection() {
             <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Visit Our Atelier
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Experience the art of bespoke tailoring in our historic atelier. Schedule a private consultation to begin your sartorial journey.
-            </p>
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">Experience the art of bespoke tailoring in our studio. Schedule a private consultation to begin your sartorial journey.</p>
 
             <div className="space-y-6 mb-8">
               <div className="flex items-center space-x-4">
