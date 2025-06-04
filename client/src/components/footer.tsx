@@ -1,6 +1,8 @@
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 import bottegaLogo from "@assets/Bottega2.png";
 
+import Bottega2 from "@assets/Bottega2.png";
+
 export function Footer() {
   const collections = [
     "Made to Measure Shirts",
@@ -28,7 +30,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <img 
-              src={bottegaLogo} 
+              src={Bottega2} 
               alt="Bottega Tenreiro" 
               className="h-8 w-auto mb-6 brightness-0 invert"
             />
