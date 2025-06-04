@@ -171,7 +171,7 @@ export class MemStorage implements IStorage {
       {
         name: "Premium Shirts",
         description: "Handcrafted dress shirts using the finest Italian fabrics",
-        imageUrl: "https://images.unsplash.com/photo-1603252109303-2751441dd157?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+        imageUrl: "/attached_assets/Screenshot 2025-06-04 at 11.12.27 a.m..png",
         priceRange: "From €295",
         category: "shirts",
         isActive: true
@@ -179,7 +179,7 @@ export class MemStorage implements IStorage {
       {
         name: "Bespoke Trousers",
         description: "Perfectly tailored trousers crafted from premium wool",
-        imageUrl: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+        imageUrl: "/attached_assets/Screenshot 2025-06-04 at 11.12.27 a.m..png",
         priceRange: "From €350",
         category: "trousers",
         isActive: true
@@ -187,7 +187,7 @@ export class MemStorage implements IStorage {
       {
         name: "Premium Accessories",
         description: "Exquisite accessories to complete your sartorial wardrobe",
-        imageUrl: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+        imageUrl: "/attached_assets/Screenshot 2025-06-04 at 11.12.27 a.m..png",
         priceRange: "From €125",
         category: "accessories",
         isActive: true
