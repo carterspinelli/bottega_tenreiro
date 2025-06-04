@@ -12,7 +12,6 @@ export function Footer() {
   const services = [
     "Size Guide",
     "Care Instructions",
-    "Alterations",
     "Returns & Exchanges",
   ];
 

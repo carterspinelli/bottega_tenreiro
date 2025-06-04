@@ -13,7 +13,6 @@ export function Navigation() {
   const navigationItems = [
     { href: "#collections", label: "Collections" },
     { href: "#bespoke", label: "Made to Measure" },
-    { href: "#craftsmanship", label: "Craftsmanship" },
     { href: "#contact", label: "Contact" },
   ];
 
