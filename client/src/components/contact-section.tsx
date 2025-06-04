@@ -70,9 +70,7 @@ export function ContactSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
-            <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-charcoal mb-6">
-              Visit Our Atelier
-            </h2>
+            <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-charcoal mb-6">Visit Our Studio</h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">Experience the art of bespoke tailoring in our studio. Schedule a private consultation to begin your sartorial journey.</p>
 
             <div className="space-y-6 mb-8">
