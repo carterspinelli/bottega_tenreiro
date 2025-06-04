@@ -43,13 +43,13 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navigationItems.map((item) => (
-              <button
+              <span
                 key={item.href}
+                className="text-charcoal hover:text-chocolate transition-colors font-medium text-sm cursor-pointer"
                 onClick={() => scrollToSection(item.href)}
-                className="text-charcoal hover:text-chocolate transition-colors font-medium text-sm"
               >
                 {item.label}
-              </button>
+              </span>
             ))}
           </div>
 
