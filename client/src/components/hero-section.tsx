@@ -38,7 +38,7 @@ export function HeroSection() {
           <Button 
             onClick={() => scrollToSection("#collections")}
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white hover:text-charcoal px-12 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-charcoal px-12 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
             New Collection
           </Button>

@@ -10,7 +10,7 @@ import type { ConfiguratorState } from "@/lib/types";
 import { apiRequest } from "@/lib/queryClient";
 
 import _1_1 from "@assets/1-1.jpg";
-
+import fabricSample from "@assets/fabric-sample.jpg";
 import aBELIER_CANNES0398 from "@assets/aBELIER_CANNES0398.webp";
 
 export function ProductConfigurator() {
@@ -188,7 +188,7 @@ export function ProductConfigurator() {
                   >
                     <CardContent className="p-4">
                       <img
-                        src={fabric.imageUrl}
+                        src={fabricSample}
                         alt={fabric.name}
                         className="w-full h-20 object-cover rounded-md mb-3"
                       />
