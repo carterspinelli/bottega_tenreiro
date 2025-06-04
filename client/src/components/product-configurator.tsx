@@ -123,7 +123,7 @@ export function ProductConfigurator() {
             Create Your Perfect Shirt
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Design your bespoke shirt with our intuitive configurator. 
+            Design your bespoke shirt. 
             Every detail crafted to your exact specifications.
           </p>
         </div>
