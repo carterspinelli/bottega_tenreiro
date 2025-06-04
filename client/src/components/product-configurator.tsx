@@ -11,6 +11,8 @@ import { apiRequest } from "@/lib/queryClient";
 
 import _1_1 from "@assets/1-1.jpg";
 
+import aBELIER_CANNES0398 from "@assets/aBELIER_CANNES0398.webp";
+
 export function ProductConfigurator() {
   const { toast } = useToast();
   const queryClient = useQueryClient();
@@ -130,7 +132,7 @@ export function ProductConfigurator() {
           {/* Product Preview */}
           <div className="relative">
             <img
-              src={_1_1}
+              src={aBELIER_CANNES0398}
               alt="Bespoke shirt preview"
               className="w-full h-auto rounded-2xl shadow-2xl"
             />
