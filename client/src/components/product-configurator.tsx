@@ -250,7 +250,7 @@ export function ProductConfigurator() {
             <div className="border-t border-gray-200 pt-8">
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <span className="text-2xl font-playfair font-bold text-charcoal">
+                  <span className="text-2xl font-bold text-charcoal">
                     {formatPrice(configurator.totalPrice)}
                   </span>
                   <span className="text-gray-500 ml-2">Made to measure</span>
