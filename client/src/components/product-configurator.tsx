@@ -10,7 +10,7 @@ import type { ConfiguratorState } from "@/lib/types";
 import { apiRequest } from "@/lib/queryClient";
 
 import _1_1 from "@assets/1-1.jpg";
-import fabricSample from "@/assets/fabric-sample.jpg";
+import fabricSample from "@assets/cotton.jpg";
 import aBELIER_CANNES0398 from "@assets/aBELIER_CANNES0398.webp";
 
 export function ProductConfigurator() {
