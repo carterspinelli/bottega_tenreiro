@@ -79,7 +79,7 @@ export function Footer() {
             <h4 className="font-playfair text-xl font-semibold mb-6">Contact</h4>
             <ul className="space-y-3 text-gray-300">
               <li>Zapopan, México</li>
-              <li>20121 Milano, Italy</li>
+              <li>CDMX, México</li>
               <li>+39 02 123 4567</li>
               <li>info@bottegatenreiro.com</li>
             </ul>
