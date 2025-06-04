@@ -214,7 +214,7 @@ export class MemStorage implements IStorage {
     const product: Product = { 
       ...insertProduct, 
       id,
-      images: insertProduct.images || [],
+      images: Array.isArray(insertProduct.images) ? insertProduct.images : [],
       isActive: insertProduct.isActive ?? true
     };
     this.products.set(id, product);
@@ -254,7 +254,11 @@ export class MemStorage implements IStorage {
 
   async createCollection(insertCollection: InsertCollection): Promise<Collection> {
     const id = this.currentCollectionId++;
-    const collection: Collection = { ...insertCollection, id };
+    const collection: Collection = { 
+      ...insertCollection, 
+      id,
+      isActive: insertCollection.isActive ?? true
+    };
     this.collections.set(id, collection);
     return collection;
   }
@@ -265,7 +269,15 @@ export class MemStorage implements IStorage {
 
   async addCartItem(insertCartItem: InsertCartItem): Promise<CartItem> {
     const id = this.currentCartItemId++;
-    const cartItem: CartItem = { ...insertCartItem, id };
+    const cartItem: CartItem = { 
+      ...insertCartItem, 
+      id,
+      fabricId: insertCartItem.fabricId ?? null,
+      collarStyle: insertCartItem.collarStyle ?? null,
+      cuffStyle: insertCartItem.cuffStyle ?? null,
+      quantity: insertCartItem.quantity ?? 1,
+      customizations: insertCartItem.customizations ?? null
+    };
     this.cartItems.set(id, cartItem);
     return cartItem;
   }
@@ -296,6 +308,9 @@ export class MemStorage implements IStorage {
     const request: ConsultationRequest = {
       ...insertRequest,
       id,
+      message: insertRequest.message ?? null,
+      phone: insertRequest.phone ?? null,
+      serviceType: insertRequest.serviceType ?? null,
       createdAt: new Date().toISOString()
     };
     this.consultationRequests.set(id, request);
