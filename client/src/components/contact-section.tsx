@@ -82,7 +82,7 @@ export function ContactSection() {
                 <MapPin className="text-chocolate text-xl flex-shrink-0" />
                 <div>
                   <div className="font-semibold text-charcoal">Address</div>
-                  <div className="text-gray-600">Via della Spiga 15, 20121 Milano, Italy</div>
+                  <div className="text-gray-600">Zapopan, México</div>
                 </div>
               </div>
 
