@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 39 39% 98%; /* #FAFAF8 */
+  --foreground: 210 11% 15%; /* #1F2937 */
+  --muted: 39 39% 95%; /* #F5F5DC */
+  --muted-foreground: 0 0% 45%; /* #737373 */
+  --popover: 0 0% 100%; /* #FFFFFF */
+  --popover-foreground: 210 11% 15%; /* #1F2937 */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 210 11% 15%; /* #1F2937 */
+  --border: 39 20% 85%; /* #D4AF37 */
+  --input: 39 20% 85%; /* #D4AF37 */
+  --primary: 25 76% 31%; /* #8B4513 */
+  --primary-foreground: 39 39% 98%; /* #FAFAF8 */
+  --secondary: 39 39% 95%; /* #F5F5DC */
+  --secondary-foreground: 210 11% 15%; /* #1F2937 */
+  --accent: 45 93% 47%; /* #D4AF37 */
+  --accent-foreground: 210 11% 15%; /* #1F2937 */
+  --destructive: 0 84% 60%; /* #F87171 */
+  --destructive-foreground: 39 39% 98%; /* #FAFAF8 */
+  --ring: 25 76% 31%; /* #8B4513 */
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 0 0% 10%; /* #1A1A1A */
+  --foreground: 39 39% 98%; /* #FAFAF8 */
+  --muted: 0 0% 15%; /* #262626 */
+  --muted-foreground: 0 0% 60%; /* #999999 */
+  --popover: 0 0% 10%; /* #1A1A1A */
+  --popover-foreground: 39 39% 98%; /* #FAFAF8 */
+  --card: 0 0% 10%; /* #1A1A1A */
+  --card-foreground: 39 39% 98%; /* #FAFAF8 */
+  --border: 0 0% 15%; /* #262626 */
+  --input: 0 0% 15%; /* #262626 */
+  --primary: 25 76% 31%; /* #8B4513 */
+  --primary-foreground: 39 39% 98%; /* #FAFAF8 */
+  --secondary: 0 0% 15%; /* #262626 */
+  --secondary-foreground: 39 39% 98%; /* #FAFAF8 */
+  --accent: 45 93% 47%; /* #D4AF37 */
+  --accent-foreground: 0 0% 10%; /* #1A1A1A */
+  --destructive: 0 84% 60%; /* #F87171 */
+  --destructive-foreground: 39 39% 98%; /* #FAFAF8 */
+  --ring: 25 76% 31%; /* #8B4513 */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .text-cream {
+    color: #FAFAF8;
+  }
+  
+  .bg-cream {
+    background-color: #FAFAF8;
+  }
+  
+  .text-chocolate {
+    color: #8B4513;
+  }
+  
+  .bg-chocolate {
+    background-color: #8B4513;
+  }
+  
+  .text-warm-gold {
+    color: #D4AF37;
+  }
+  
+  .bg-warm-gold {
+    background-color: #D4AF37;
+  }
+  
+  .text-charcoal {
+    color: #1F1F1F;
+  }
+  
+  .bg-charcoal {
+    background-color: #1F1F1F;
+  }
+  
+  .border-chocolate {
+    border-color: #8B4513;
+  }
+  
+  .border-warm-gold {
+    border-color: #D4AF37;
+  }
+}
+
+/* Custom smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Luxury button hover effects */
+.btn-luxury {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-luxury:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Product card animations */
+.product-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Fabric swatch interactions */
+.fabric-swatch {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.fabric-swatch:hover {
+  transform: scale(1.05);
+}
+
+.fabric-swatch.selected {
+  border-color: #D4AF37;
+  transform: scale(1.02);
+}
+
+/* Hero parallax effect */
+.hero-parallax {
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .hero-parallax {
+    background-attachment: scroll;
+  }
+}
